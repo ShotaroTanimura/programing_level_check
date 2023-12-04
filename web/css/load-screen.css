@@ -1,0 +1,36 @@
+/* Styles for the load screen */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-animation {
+  /* Placeholder for the animation */
+}
+
+.pixel-heart {
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/logo5.png'); /* A pixel-art heart image */
+  background-size: cover;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
